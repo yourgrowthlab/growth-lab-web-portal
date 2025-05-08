@@ -17,11 +17,22 @@ const Hero = () => {
               Your Growth Lab delivers cutting-edge HR consulting, professional coaching, and mentorship to elevate your organization's human capital strategy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light hover:bg-growthlab-dark text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all">
+              <Button 
+                className="bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light hover:bg-growthlab-dark text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
+                onClick={() => {
+                  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Explore Our Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-growthlab-teal text-growthlab-teal hover:bg-growthlab-light px-8 py-6 text-lg shadow-sm hover:shadow-md transition-all">
+              <Button 
+                variant="outline" 
+                className="border-growthlab-teal text-growthlab-teal hover:bg-growthlab-light px-8 py-6 text-lg shadow-sm hover:shadow-md transition-all"
+                onClick={() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Book a Consultation
               </Button>
             </div>

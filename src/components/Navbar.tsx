@@ -10,13 +10,23 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white py-4 sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light bg-clip-text text-transparent">
+              <img 
+                src="/lovable-uploads/4b7c7afd-ddb9-4ec3-8ba0-263b9df870d1.png" 
+                alt="Your Growth Lab Logo" 
+                className="h-14 mr-3" 
+              />
+              <span className="text-2xl font-bold bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light bg-clip-text text-transparent md:hidden lg:inline-block">
                 YourGrowthLab
               </span>
             </a>
@@ -24,16 +34,40 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">
-            <a href="#services" className="text-gray-700 hover:text-growthlab-teal font-medium transition-colors">
+            <a 
+              href="#services" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
+              className="text-gray-700 hover:text-growthlab-teal font-medium transition-colors"
+            >
               Services
             </a>
-            <a href="#about" className="text-gray-700 hover:text-growthlab-teal font-medium transition-colors">
+            <a 
+              href="#about" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }}
+              className="text-gray-700 hover:text-growthlab-teal font-medium transition-colors"
+            >
               About
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-growthlab-teal font-medium transition-colors">
+            <a 
+              href="#contact" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('contact');
+              }}
+              className="text-gray-700 hover:text-growthlab-teal font-medium transition-colors"
+            >
               Contact
             </a>
-            <Button className="bg-growthlab-teal hover:bg-growthlab-dark text-white">
+            <Button 
+              className="bg-growthlab-teal hover:bg-growthlab-dark text-white"
+              onClick={() => scrollToSection('services')}
+            >
               Get Started
             </Button>
           </div>
@@ -56,28 +90,37 @@ const Navbar = () => {
             <div className="flex flex-col space-y-4">
               <a 
                 href="#services" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('services');
+                }}
                 className="text-gray-700 hover:text-growthlab-teal font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </a>
               <a 
                 href="#about" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('about');
+                }}
                 className="text-gray-700 hover:text-growthlab-teal font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
               >
                 About
               </a>
               <a 
                 href="#contact" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('contact');
+                }}
                 className="text-gray-700 hover:text-growthlab-teal font-medium py-2 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </a>
               <Button 
                 className="bg-growthlab-teal hover:bg-growthlab-dark text-white w-full"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => scrollToSection('services')}
               >
                 Get Started
               </Button>

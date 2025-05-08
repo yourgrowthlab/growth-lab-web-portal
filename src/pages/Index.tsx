@@ -31,12 +31,27 @@ const Index = () => {
     fadeElements.forEach((element) => {
       observer.observe(element);
     });
+
+    // Handle smooth scrolling for anchor links
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+        e.preventDefault();
+        const id = target.getAttribute('href')?.substring(1);
+        document.getElementById(id!)?.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    document.addEventListener('click', handleAnchorClick);
     
     // Cleanup
     return () => {
       fadeElements.forEach((element) => {
         observer.unobserve(element);
       });
+      document.removeEventListener('click', handleAnchorClick);
     };
   }, []);
 
