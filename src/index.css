@@ -67,9 +67,57 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, rgba(211, 228, 253, 0.3) 0%, rgba(142, 206, 202, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(211, 228, 253, 0.4) 0%, rgba(142, 206, 202, 0.4) 100%);
 }
 
 .shadow-custom {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Enhanced Animation Styles */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Section Intersection Observer for scroll animations */
+.section-observer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-observer.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced gradients */
+.text-gradient {
+  background: linear-gradient(to right, #2A9D8F, #8ECECA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Blue accents */
+.blue-accent-border {
+  border-left: 4px solid #D3E4FD;
+}
+
+/* Soft transitions */
+.transition-smooth {
+  transition: all 0.4s ease;
 }

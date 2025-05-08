@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Award, Book } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Services = () => {
   const services = [
@@ -14,7 +15,8 @@ const Services = () => {
         "Performance management systems",
         "Compensation and benefits strategy",
         "HR policy development and implementation"
-      ]
+      ],
+      image: "https://img.freepik.com/free-photo/business-people-meeting-discussing-project_23-2149300808.jpg"
     },
     {
       icon: <Award className="h-12 w-12 text-growthlab-teal" />,
@@ -25,7 +27,8 @@ const Services = () => {
         "Career development planning",
         "Team performance coaching",
         "Conflict resolution and management"
-      ]
+      ],
+      image: "https://img.freepik.com/free-photo/business-people-shaking-hands_53876-13391.jpg"
     },
     {
       icon: <Book className="h-12 w-12 text-growthlab-teal" />,
@@ -36,16 +39,17 @@ const Services = () => {
         "Best practices implementation",
         "HR technology integration support",
         "Mentoring for emerging HR leaders"
-      ]
+      ],
+      image: "https://img.freepik.com/free-photo/business-people-discussing-meeting_53876-24371.jpg"
     }
   ];
 
   return (
     <section id="services" className="section-padding bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16 animate-fade-in opacity-0">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-          <div className="h-1 w-24 bg-growthlab-teal mx-auto mb-6"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Comprehensive HR solutions designed to transform your organization's human capital strategy and drive sustainable growth.
           </p>
@@ -53,17 +57,24 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="border-none shadow-custom hover:shadow-lg transition-shadow duration-300 animate-fade-in" style={{animationDelay: `${0.2 * index}s`}}>
+            <Card key={index} className="border-none shadow-custom hover:shadow-lg transition-all duration-300 animate-fade-in opacity-0" style={{animationDelay: `${0.2 * index}s`}}>
+              <AspectRatio ratio={16/9} className="overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </AspectRatio>
               <CardHeader className="pb-4">
-                <div className="mb-4">{service.icon}</div>
-                <CardTitle className="text-2xl font-bold text-growthlab-dark">{service.title}</CardTitle>
+                <div className="mb-4 p-3 bg-gradient-to-br from-growthlab-light-blue to-growthlab-light inline-block rounded-lg">{service.icon}</div>
+                <CardTitle className="text-2xl font-bold text-growthlab-dark bg-gradient-to-r from-growthlab-dark to-growthlab-teal bg-clip-text text-transparent">{service.title}</CardTitle>
                 <CardDescription className="text-gray-700">{service.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-growthlab-teal shrink-0"></div>
+                      <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light shrink-0"></div>
                       <span>{feature}</span>
                     </li>
                   ))}
