@@ -34,7 +34,7 @@ const About = () => {
             <div className="mb-8 overflow-hidden rounded-xl shadow-custom">
               <AspectRatio ratio={16/9}>
                 <img 
-                  src="https://img.freepik.com/free-photo/business-people-working-together-project_23-2149850123.jpg" 
+                  src="https://img.freepik.com/free-photo/group-business-professionals-having-meeting_53876-14805.jpg" 
                   alt="Your Growth Lab Team" 
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
                 />

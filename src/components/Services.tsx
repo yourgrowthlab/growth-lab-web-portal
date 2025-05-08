@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Award, Book } from "lucide-react";
+import { Users, Award, Book, Lightbulb } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Services = () => {
@@ -41,6 +41,18 @@ const Services = () => {
         "Mentoring for emerging HR leaders"
       ],
       image: "https://img.freepik.com/free-photo/business-people-discussing-meeting_53876-24371.jpg"
+    },
+    {
+      icon: <Lightbulb className="h-12 w-12 text-growthlab-teal" />,
+      title: "Soft Skills Training",
+      description: "Comprehensive training programs to develop essential soft skills that drive personal and organizational excellence.",
+      features: [
+        "Leadership development",
+        "Personal effectiveness",
+        "Career and personal growth",
+        "Communication and interpersonal skills"
+      ],
+      image: "https://img.freepik.com/free-photo/woman-giving-presentation-during-meeting_23-2148898907.jpg"
     }
   ];
 
