@@ -11,8 +11,8 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-growthlab-teal" />,
       title: "Email",
-      info: "info@yourgrowthlab.website",
-      link: "mailto:info@yourgrowthlab.website"
+      info: "info@yourgrowthlab.onine",
+      link: "mailto:info@yourgrowthlab.online"
     },
     {
       icon: <MessageSquare className="h-6 w-6 text-growthlab-teal" />,
@@ -23,8 +23,8 @@ const Contact = () => {
     {
       icon: <Globe className="h-6 w-6 text-growthlab-teal" />,
       title: "Website",
-      info: "www.yourgrowthlab.website",
-      link: "https://www.yourgrowthlab.website"
+      info: "www.yourgrowthlab.online",
+      link: "https://www.yourgrowthlab.online"
     }
   ];
 
