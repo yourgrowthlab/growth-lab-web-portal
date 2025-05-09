@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { CheckCircle, Users, FileText2, Award, Star } from "lucide-react";
+import { CheckCircle, Users, FileText, Award, Star } from "lucide-react";
 
 const CaseStudies = () => {
   const caseStudies = [
@@ -10,7 +9,7 @@ const CaseStudies = () => {
       title: "Developing HR Policies and SOPs for a Construction Company",
       description: "A client from the construction sector approached us to strengthen their HR governance by developing two key HR policies and standard operating procedures (SOPs). The first covered Resignation, Selection & Onboarding, ensuring a seamless employee lifecycle from recruitment to exit, and minimizing operational disruptions.",
       outcome: "The outcome was a set of formal, pragmatic policies that enhanced compliance, safeguarded employee relations, and supported operational continuity.",
-      icon: <FileText2 className="h-12 w-12 text-growthlab-teal" />,
+      icon: <FileText className="h-12 w-12 text-growthlab-teal" />,
       image: "https://img.freepik.com/free-photo/construction-team-discussing-building-project-site-with-blueprint_23-2149089455.jpg",
     },
     {
