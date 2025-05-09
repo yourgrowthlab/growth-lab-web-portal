@@ -61,15 +61,15 @@ const Services = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 animate-fade-in opacity-0">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light mx-auto mb-6"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-growthlab-teal to-growthlab-light mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Comprehensive HR solutions designed to transform your organization's human capital strategy and drive sustainable growth.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+        <div className="flex flex-wrap gap-4 justify-center">
           {services.map((service, index) => (
-            <Card key={index} className="border-none shadow-custom hover:shadow-lg transition-all duration-300 animate-fade-in opacity-0" style={{animationDelay: `${0.2 * index}s`}}>
+            <Card key={index} className="border-none shadow-custom hover:shadow-lg transition-all duration-300 animate-fade-in opacity-0 w-full md:w-[calc(25%-1rem)]" style={{animationDelay: `${0.2 * index}s`}}>
               <AspectRatio ratio={16/9} className="overflow-hidden">
                 <img 
                   src={service.image} 
@@ -86,7 +86,7 @@ const Services = () => {
                 <ul className="space-y-1">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start text-sm">
-                      <div className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light shrink-0"></div>
+                      <div className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-gradient-to-r from-growthlab-teal to-growthlab-light shrink-0"></div>
                       <span>{feature}</span>
                     </li>
                   ))}

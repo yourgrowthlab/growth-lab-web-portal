@@ -1,50 +1,30 @@
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Check, Target, Lightbulb, Star, Users, RefreshCw } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { ChevronRight } from "lucide-react";
 
 const About = () => {
-  const brandImageUrl = "/public/lovable-uploads/4169702f-3d18-482b-8e43-feebcfb61d71.png";
-  
   const values = [
     {
-      number: 1,
       title: "Integrity",
-      description: "Upholding honesty, transparency, and ethical practices in all interactions.",
-      icon: <Check className="h-8 w-8 text-white" />
+      description: "Upholding honesty, transparency, and ethical practices in all interactions."
     },
     {
-      number: 2,
       title: "Empowerment",
-      description: "Inspiring confidence and self-discovery for sustainable growth.",
-      icon: <Lightbulb className="h-8 w-8 text-white" />
+      description: "Inspiring confidence and self-discovery for sustainable growth."
     },
     {
-      number: 3,
       title: "Excellence",
-      description: "Delivering high-quality services and measurable results.",
-      icon: <Star className="h-8 w-8 text-white" />
+      description: "Delivering high-quality services and measurable results."
     },
     {
-      number: 4,
       title: "Collaboration",
-      description: "Building meaningful partnerships for mutual success.",
-      icon: <Users className="h-8 w-8 text-white" />
+      description: "Building meaningful partnerships for mutual success."
     },
     {
-      number: 5,
       title: "Innovation",
-      description: "Continuously adapting to create forward-thinking solutions.",
-      icon: <RefreshCw className="h-8 w-8 text-white" />
+      description: "Continuously adapting to create forward-thinking solutions."
     }
-  ];
-
-  const approaches = [
-    "Pragmatic",
-    "Holistic View",
-    "Customized Solutions",
-    "Sustainable Impact"
   ];
 
   return (
@@ -54,16 +34,6 @@ const About = () => {
           <div className="animate-fade-in opacity-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-growthlab-dark to-growthlab-teal bg-clip-text text-transparent">About Your Growth Lab</h2>
             <div className="h-1 w-16 bg-gradient-to-r from-growthlab-teal to-growthlab-light mb-8"></div>
-
-            <div className="mb-8 overflow-hidden rounded-xl shadow-custom">
-              <AspectRatio ratio={16/9}>
-                <img 
-                  src="https://img.freepik.com/free-photo/group-business-professionals-having-meeting_53876-14805.jpg" 
-                  alt="Your Growth Lab Team" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
-              </AspectRatio>
-            </div>
             
             <p className="text-lg text-gray-700 mb-6">
               Your Growth Lab is a premier HR consulting firm dedicated to helping organizations optimize their human capital strategies through expert consulting, coaching, and mentorship.
@@ -86,16 +56,6 @@ const About = () => {
           </div>
           
           <div className="flex flex-col gap-8 animate-fade-in opacity-0" style={{animationDelay: "0.2s"}}>
-            <Card className="border-none shadow-custom overflow-hidden">
-              <CardContent className="p-0">
-                <img 
-                  src={brandImageUrl}
-                  alt="Brand Narratives" 
-                  className="w-full h-auto"
-                />
-              </CardContent>
-            </Card>
-            
             <Card className="border-none shadow-custom bg-gradient-to-br from-growthlab-dark to-growthlab-teal text-white">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
@@ -119,40 +79,16 @@ const About = () => {
         <div className="mt-16 animate-fade-in opacity-0" style={{animationDelay: "0.4s"}}>
           <h3 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-growthlab-dark to-growthlab-teal bg-clip-text text-transparent">Our Core Values</h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-wrap justify-center gap-4">
             {values.map((value, index) => (
-              <Card key={index} className="border-none shadow-custom hover:shadow-md transition-all duration-300 bg-gradient-to-br from-growthlab-dark to-growthlab-teal text-white">
+              <Card key={index} className="border-none shadow-custom hover:shadow-md transition-all duration-300 bg-gradient-to-br from-growthlab-dark to-growthlab-teal text-white flex-1 min-w-[200px] max-w-[220px]">
                 <CardContent className="p-6">
-                  <div className="flex items-start">
-                    <div className="mr-4 mt-1 bg-growthlab-teal/30 p-3 rounded-full shadow-sm">{value.icon}</div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">{value.number}. {value.title}</h4>
-                      <p>{value.description}</p>
-                    </div>
-                  </div>
+                  <h4 className="text-xl font-bold mb-2">{value.title}</h4>
+                  <p className="text-sm">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
-          
-          <Card className="mt-8 border-none shadow-custom bg-gradient-to-r from-growthlab-teal to-growthlab-dark text-white">
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-bold mb-4 text-center">Our Approach</h3>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-                {approaches.map((approach, index) => (
-                  <div key={index} className="p-4 bg-white/10 rounded-lg">
-                    <p className="text-lg font-semibold">
-                      {index === 0 && "*) "}
-                      {index === 1 && "**) "}
-                      {index === 2 && "***) "}
-                      {index === 3 && "****) "}
-                      {approach}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
