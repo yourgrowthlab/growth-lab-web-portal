@@ -10,37 +10,43 @@ const Testimonials = () => {
     {
       name: "Rizky Kurniawati, S.Gz., CPC",
       text: "The session with Coach Dewi was enjoyable and relaxed, making me feel safe and comfortable throughout. I gained valuable insights and clarity on actionable steps suited to my situation.",
-      image: "public/lovable-uploads/58a33513-98a6-43bc-af66-3f5df2cf9a03.png",
+      image: "/public/lovable-uploads/357be9a9-28a0-4526-81f3-e5f012461ebf.png",
+      position: "73% 8%",
       initials: "RK"
     },
     {
       name: "Siti Hamzah",
       text: "After just two coaching sessions with Coach Dewi, I became more confident in exploring my potential and realizing that many of the solutions to our challenges already lie within ourselves. Thank you, Coach Dewi!",
-      image: "public/lovable-uploads/58a33513-98a6-43bc-af66-3f5df2cf9a03.png",
+      image: "/public/lovable-uploads/3a10f9e5-a6ea-4570-bab0-5d9c998eb3da.png",
+      position: "50% 31%",
       initials: "SH"
     },
     {
       name: "Nuha Uswati",
       text: "A very engaging coaching session. I felt truly heard without judgment. Coach Dewi helped untangle my cluttered thoughts, making it easier to prioritize and take necessary actions.",
-      image: "public/lovable-uploads/58a33513-98a6-43bc-af66-3f5df2cf9a03.png",
+      image: "/public/lovable-uploads/3a10f9e5-a6ea-4570-bab0-5d9c998eb3da.png",
+      position: "87% 69%",
       initials: "NU"
     },
     {
       name: "Andrian Setiawan, Mentee",
       text: "It was a truly engaging and insightful experience. I really appreciate your deep HR expertise and the valuable real-world examples you shared. The session was interactive, enjoyable, and easy to follow. Your guidance gave me fresh perspectives that I can apply in my work.",
-      image: "public/lovable-uploads/58a33513-98a6-43bc-af66-3f5df2cf9a03.png",
+      image: "/public/lovable-uploads/3a10f9e5-a6ea-4570-bab0-5d9c998eb3da.png",
+      position: "22% 95%",
       initials: "AS"
     },
     {
       name: "Arman F.",
       text: "Thank you, Bu Dewi, for a very meaningful mentoring session on career planning in HR. I gained valuable insights into career development strategies, especially in compensation and benefits, which are becoming increasingly complex and strategic.",
-      image: "public/lovable-uploads/58a33513-98a6-43bc-af66-3f5df2cf9a03.png",
+      image: "/public/lovable-uploads/357be9a9-28a0-4526-81f3-e5f012461ebf.png",
+      position: "89% 97%",
       initials: "AF"
     },
     {
       name: "Ilham F. Apriansyah",
       text: "Thank you so much for the mentoring session, Bu. Previously, I thought being a good HR professional meant providing the ideal service to the company. But after our conversation, I realized that what's more important is offering relevant, realistic solutions suited to the company's condition.",
-      image: "public/lovable-uploads/fe6834b8-6cba-4f3d-9d0c-0ddcdea03f8b.png",
+      image: "/public/lovable-uploads/357be9a9-28a0-4526-81f3-e5f012461ebf.png",
+      position: "50% 63%",
       initials: "IF"
     }
   ];
@@ -82,7 +88,11 @@ const Testimonials = () => {
                 <div className="flex items-center mb-4">
                   <div className="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-growthlab-teal">
                     <Avatar className="h-16 w-16">
-                      <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                      <AvatarImage 
+                        src={testimonial.image} 
+                        alt={testimonial.name} 
+                        style={{ objectPosition: testimonial.position }}
+                      />
                       <AvatarFallback className="bg-growthlab-teal text-white">{testimonial.initials}</AvatarFallback>
                     </Avatar>
                   </div>
