@@ -40,7 +40,7 @@ const Testimonials = () => {
     {
       name: "Ilham F. Apriansyah",
       text: "Thank you so much for the mentoring session, Bu. Previously, I thought being a good HR professional meant providing the ideal service to the company. But after our conversation, I realized that what's more important is offering relevant, realistic solutions suited to the company's condition.",
-      image: "https://img.freepik.com/free-vector/office-worker-sitting-desk-with-laptop-computer_23-2148175710.jpg",
+      image: "public/lovable-uploads/d73a973e-9791-47a8-825a-952191c91dca.png",
       initials: "IF"
     }
   ];
