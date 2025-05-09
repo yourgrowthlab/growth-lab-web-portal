@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -17,7 +18,7 @@ const CaseStudies = () => {
       description: "Following the sharp decline in their business operations and revenue, a construction client sought our expertise to develop a strategy for employee rationalization. We provided an end-to-end solution that included workforce analysis, identification of critical roles, communication planning, and risk mitigation measures.",
       outcome: "The client successfully navigated a difficult phase with minimal reputational damage, while maintaining the morale of retained employees and preparing the organization for recovery.",
       icon: <Users className="h-12 w-12 text-growthlab-teal" />,
-      image: "https://img.freepik.com/free-photo/business-people-analyzing-statistics-financial-concept_53876-23773.jpg",
+      image: "https://img.freepik.com/free-photo/business-team-analyzing-charts-graphs-meeting_1262-2059.jpg",
     },
     {
       title: "Mentoring an HRGA Supervisor to Build an HR Framework",
@@ -38,7 +39,7 @@ const CaseStudies = () => {
       description: "A coaching client, a business owner, sought support to enhance her leadership capabilities, particularly in becoming more disciplined in utilizing her resources to ensure the sustainability of her business. We provided focused leadership coaching that combined practical techniques with mindset shifts.",
       outcome: "The client developed stronger self-discipline, improved her decision-making, and established systems that optimized her business operations for long-term success.",
       icon: <Users className="h-12 w-12 text-growthlab-teal" />,
-      image: "https://img.freepik.com/free-photo/business-people-discussing-ideas-strategy-workplace_23-2149918478.jpg",
+      image: "https://img.freepik.com/free-photo/group-business-people-having-meeting_53876-14814.jpg",
     },
   ];
 

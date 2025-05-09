@@ -67,7 +67,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {services.map((service, index) => (
             <Card key={index} className="border-none shadow-custom hover:shadow-lg transition-all duration-300 animate-fade-in opacity-0" style={{animationDelay: `${0.2 * index}s`}}>
               <AspectRatio ratio={16/9} className="overflow-hidden">
@@ -77,16 +77,16 @@ const Services = () => {
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
                 />
               </AspectRatio>
-              <CardHeader className="pb-4">
-                <div className="mb-4 p-3 bg-gradient-to-br from-growthlab-light-blue to-growthlab-light inline-block rounded-lg">{service.icon}</div>
-                <CardTitle className="text-2xl font-bold text-growthlab-dark bg-gradient-to-r from-growthlab-dark to-growthlab-teal bg-clip-text text-transparent">{service.title}</CardTitle>
-                <CardDescription className="text-gray-700">{service.description}</CardDescription>
+              <CardHeader className="pb-2">
+                <div className="mb-3 p-3 bg-gradient-to-br from-growthlab-light-blue to-growthlab-light inline-block rounded-lg">{service.icon}</div>
+                <CardTitle className="text-xl font-bold text-growthlab-dark bg-gradient-to-r from-growthlab-dark to-growthlab-teal bg-clip-text text-transparent">{service.title}</CardTitle>
+                <CardDescription className="text-gray-700 text-sm">{service.description}</CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
+              <CardContent className="pb-4">
+                <ul className="space-y-1">
                   {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-start">
-                      <div className="mr-2 mt-1 h-2 w-2 rounded-full bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light shrink-0"></div>
+                    <li key={i} className="flex items-start text-sm">
+                      <div className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light shrink-0"></div>
                       <span>{feature}</span>
                     </li>
                   ))}
