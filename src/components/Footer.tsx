@@ -15,7 +15,7 @@ const Footer = () => {
               Transforming organizations through expert HR consulting, professional coaching, and mentorship.
             </p>
             <div className="text-growthlab-teal-light font-bold">
-              yourgrowthlab.website
+              yourgrowthlab.biz.id
             </div>
           </div>
           
@@ -100,11 +100,11 @@ const Footer = () => {
               </p>
               <p className="flex items-start text-gray-300">
                 <span className="mr-3">📞</span>
-                +1 (555) 123-4567
+                +62 (811) 880-9814
               </p>
               <p className="flex items-start text-gray-300">
                 <span className="mr-3">✉️</span>
-                info@yourgrowthlab.website
+                info@yourgrowthlab.biz.id
               </p>
             </div>
           </div>

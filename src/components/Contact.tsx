@@ -11,20 +11,20 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-growthlab-teal" />,
       title: "Email",
-      info: "info@yourgrowthlab.onine",
-      link: "mailto:info@yourgrowthlab.online"
+      info: "info@yourgrowthlab.biz.id",
+      link: "mailto:info@yourgrowthlab.biz.id"
     },
     {
       icon: <MessageSquare className="h-6 w-6 text-growthlab-teal" />,
       title: "Phone",
-      info: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      info: "+62 (811) 880-9814",
+      link: "tel:+6281188089814"
     },
     {
       icon: <Globe className="h-6 w-6 text-growthlab-teal" />,
       title: "Website",
-      info: "www.yourgrowthlab.online",
-      link: "https://www.yourgrowthlab.online"
+      info: "www.yourgrowthlab.biz.id",
+      link: "https://www.yourgrowthlab.biz.id"
     }
   ];
 
