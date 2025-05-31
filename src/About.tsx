@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "./card";
 import { ChevronRight } from "lucide-react";
 
 const About = () => {

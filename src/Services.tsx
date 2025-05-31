@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
 import { Users, Award, Book, Lightbulb } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from "./aspect-ratio";
 
 const Services = () => {
   const services = [

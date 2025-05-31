@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
+import { Button } from "./button";
 import { ArrowRight } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from "./aspect-ratio";
 
 const Hero = () => {
   return (

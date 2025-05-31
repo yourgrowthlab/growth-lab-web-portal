@@ -1,13 +1,13 @@
 
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Services from '../components/Services';
-import About from '../components/About';
-import Testimonials from '../components/Testimonials';
-import CaseStudies from '../components/CaseStudies';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Services from './Services';
+import About from './About';
+import Testimonials from './Testimonials';
+import CaseStudies from './CaseStudies';
+import Contact from './Contact';
+import Footer from './Footer';
 
 const Index = () => {
   // Add intersection observer for scroll animations

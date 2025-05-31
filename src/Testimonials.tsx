@@ -1,9 +1,9 @@
 
 import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "./card";
 import { Star } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { AspectRatio } from "./aspect-ratio";
+import { Avatar, AvatarImage, AvatarFallback } from "./avatar";
 
 const Testimonials = () => {
   const testimonials = [

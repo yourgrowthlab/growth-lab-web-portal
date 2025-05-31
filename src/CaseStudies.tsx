@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Card, CardContent, CardHeader, CardTitle } from "./card";
+import { AspectRatio } from "./aspect-ratio";
 import { CheckCircle, Users, FileText, Award, Star } from "lucide-react";
 
 const CaseStudies = () => {

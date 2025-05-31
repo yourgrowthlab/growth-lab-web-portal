@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "./button";
+import { Input } from "./input";
+import { Textarea } from "./textarea";
 import { Mail, MessageSquare, Globe } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from "./aspect-ratio";
 
 const Contact = () => {
   const contactInfo = [
