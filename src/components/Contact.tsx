@@ -132,7 +132,15 @@ const Contact = () => {
               ))}
             </div>
             
-            <div className="mt-12 bg-white p-6 rounded-xl shadow-custom">
+            <div className="mt-8 bg-white p-6 rounded-xl shadow-custom">
+              <h4 className="text-xl font-bold mb-4 text-growthlab-dark">Get In Touch</h4>
+              <div className="flex items-start text-gray-700">
+                <span className="mr-3">📍</span>
+                <span>Sawangan Permai Depok</span>
+              </div>
+            </div>
+            
+            <div className="mt-6 bg-white p-6 rounded-xl shadow-custom">
               <h4 className="text-xl font-bold mb-4 text-growthlab-dark">Office Hours</h4>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gradient-to-r from-white to-growthlab-light-blue/20 p-3 rounded-lg">

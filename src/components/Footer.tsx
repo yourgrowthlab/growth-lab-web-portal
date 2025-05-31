@@ -96,7 +96,7 @@ const Footer = () => {
             <div className="space-y-4">
               <p className="flex items-start text-gray-300">
                 <span className="mr-3">📍</span>
-                123 Business Avenue, Suite 500, New York, NY 10001
+                Sawangan Permai Depok
               </p>
               <p className="flex items-start text-gray-300">
                 <span className="mr-3">📞</span>
