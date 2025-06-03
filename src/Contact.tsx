@@ -53,7 +53,7 @@ const Contact = () => {
             <div className="mb-6 overflow-hidden rounded-lg">
               <AspectRatio ratio={16/9}>
                 <img 
-                  src="https://img.freepik.com/free-photo/close-up-hand-typing-laptop-keyboard_23-2149319734.jpg" 
+                  src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                   alt="Contact Your Growth Lab" 
                   className="object-cover w-full h-full"
                 />

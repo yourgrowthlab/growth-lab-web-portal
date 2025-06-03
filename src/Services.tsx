@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
 import { Users, Award, Book, Lightbulb } from "lucide-react";
@@ -16,7 +15,7 @@ const Services = () => {
         "Compensation and benefits strategy",
         "HR policy development and implementation"
       ],
-      image: "https://img.freepik.com/free-photo/business-people-meeting-discussing-project_23-2149300808.jpg"
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
     },
     {
       icon: <Award className="h-12 w-12 text-growthlab-teal" />,
@@ -52,7 +51,7 @@ const Services = () => {
         "Career and personal growth",
         "Communication and interpersonal skills"
       ],
-      image: "https://img.freepik.com/free-photo/woman-giving-presentation-during-meeting_23-2148898907.jpg"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
     }
   ];
 

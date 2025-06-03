@@ -2,45 +2,38 @@
 import React from 'react';
 import { Card, CardContent } from "./card";
 import { Star } from "lucide-react";
-import { AspectRatio } from "./aspect-ratio";
-import { Avatar, AvatarImage, AvatarFallback } from "./avatar";
+import { Avatar, AvatarFallback } from "./avatar";
 
 const Testimonials = () => {
   const testimonials = [
     {
       name: "Rizky Kurniawati, S.Gz., CPC",
       text: "The session with Coach Dewi was enjoyable and relaxed, making me feel safe and comfortable throughout. I gained valuable insights and clarity on actionable steps suited to my situation.",
-      image: "https://img.freepik.com/free-vector/business-woman-working-laptop_23-2148178963.jpg",
       initials: "RK"
     },
     {
       name: "Siti Hamzah",
       text: "After just two coaching sessions with Coach Dewi, I became more confident in exploring my potential and realizing that many of the solutions to our challenges already lie within ourselves. Thank you, Coach Dewi!",
-      image: "https://img.freepik.com/free-vector/hand-drawn-business-woman-concept_52683-76157.jpg",
       initials: "SH"
     },
     {
       name: "Nuha Uswati",
       text: "A very engaging coaching session. I felt truly heard without judgment. Coach Dewi helped untangle my cluttered thoughts, making it easier to prioritize and take necessary actions.",
-      image: "https://img.freepik.com/free-vector/muslim-woman-working-laptop-cartoon-character_71593-1085.jpg",
       initials: "NU"
     },
     {
       name: "Andrian Setiawan",
       text: "It was a truly engaging and insightful experience. I really appreciate your deep HR expertise and the valuable real-world examples you shared. The session was interactive, enjoyable, and easy to follow. Your guidance gave me fresh perspectives that I can apply in my work.",
-      image: "https://img.freepik.com/free-vector/hand-drawn-business-man-concept_52683-76157.jpg",
       initials: "AS"
     },
     {
       name: "Arman F.",
       text: "Thank you, Bu Dewi, for a very meaningful mentoring session on career planning in HR. I gained valuable insights into career development strategies, especially in compensation and benefits, which are becoming increasingly complex and strategic.",
-      image: "https://img.freepik.com/free-vector/businessman-working-laptop-office-3d-illustration_1150-52059.jpg",
       initials: "AF"
     },
     {
       name: "Ilham F. Apriansyah",
       text: "Thank you so much for the mentoring session, Bu. Previously, I thought being a good HR professional meant providing the ideal service to the company. But after our conversation, I realized that what's more important is offering relevant, realistic solutions suited to the company's condition.",
-      image: "public/lovable-uploads/d73a973e-9791-47a8-825a-952191c91dca.png",
       initials: "IF"
     }
   ];
@@ -82,11 +75,9 @@ const Testimonials = () => {
                 <div className="flex items-center mb-4">
                   <div className="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-growthlab-teal">
                     <Avatar className="h-16 w-16">
-                      <AvatarImage 
-                        src={testimonial.image} 
-                        alt={testimonial.name} 
-                      />
-                      <AvatarFallback className="bg-growthlab-teal text-white">{testimonial.initials}</AvatarFallback>
+                      <AvatarFallback className="bg-gradient-to-br from-growthlab-teal to-growthlab-teal-light text-white font-bold text-lg">
+                        {testimonial.initials}
+                      </AvatarFallback>
                     </Avatar>
                   </div>
                   <div>
