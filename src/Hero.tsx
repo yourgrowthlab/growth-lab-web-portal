@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "./button";
 import { ArrowRight } from "lucide-react";
@@ -45,9 +46,9 @@ const Hero = () => {
                   className="object-cover w-full h-full rounded-lg hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-growthlab-dark/70 to-transparent p-5 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Transforming HR Practices</h3>
+                  <h3 className="text-2xl font-bold mb-2">Real People, Real Growth</h3>
                   <p className="text-white/90">
-                    Join the 200+ organizations who have revolutionized their HR approach with Your Growth Lab's expert guidance.
+                    Trusted by individuals, professionals, and organizations to unlock potential, elevate leadership, and grow with clarity and purpose.
                   </p>
                 </div>
               </AspectRatio>
