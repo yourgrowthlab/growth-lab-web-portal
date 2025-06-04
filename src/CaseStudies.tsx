@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import { AspectRatio } from "./aspect-ratio";
@@ -12,13 +11,6 @@ const CaseStudies = () => {
       outcome: "The outcome was a set of formal, pragmatic policies that enhanced compliance, safeguarded employee relations, and supported operational continuity.",
       icon: <FileText className="h-12 w-12 text-growthlab-teal" />,
       image: "https://img.freepik.com/free-photo/construction-team-discussing-building-project-site-with-blueprint_23-2149089455.jpg",
-    },
-    {
-      title: "Strategy for Employee Rationalization Amid Business Decline",
-      description: "Following the sharp decline in their business operations and revenue, a construction client sought our expertise to develop a strategy for employee rationalization. We provided an end-to-end solution that included workforce analysis, identification of critical roles, communication planning, and risk mitigation measures.",
-      outcome: "The client successfully navigated a difficult phase with minimal reputational damage, while maintaining the morale of retained employees and preparing the organization for recovery.",
-      icon: <Users className="h-12 w-12 text-growthlab-teal" />,
-      image: "https://img.freepik.com/free-photo/business-team-analyzing-charts-graphs-meeting_1262-2059.jpg",
     },
     {
       title: "Mentoring an HRGA Supervisor to Build an HR Framework",

@@ -36,7 +36,7 @@ const About = () => {
             <div className="h-1 w-16 bg-gradient-to-r from-growthlab-teal to-growthlab-light mb-8"></div>
             
             <p className="text-lg text-gray-700 mb-8">
-              At Your Growth Lab (YGL), we specialize in helping businesses build, refine, and optimize their human capital strategies — ensuring they are aligned, agile, and ready to drive growth. We partner closely with organizations at key transition points, delivering pragmatic and customized HR solutions that create sustainable impact.
+              At Your Growth Lab, we help people and businesses grow with clarity and purpose. From career coaching to strategic HR consulting, we offer practical, customized solutions shaped by 24 years of real-world experience. Whether you're an individual in transition or an organization evolving your people strategy, we're here to empower your next step.
             </p>
             
             <div className="flex items-center">
