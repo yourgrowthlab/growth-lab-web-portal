@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "./button";
 import { ArrowRight } from "lucide-react";
@@ -14,7 +13,7 @@ const Hero = () => {
               <span className="text-growthlab-teal bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light bg-clip-text">Igniting Growth, Meaningful Impact</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
-              Empowering growth in people and organizations through actionable coaching, pragmatic HR solutions, and over two decades of real-world expertise.
+              Empowering growth in people and organizations through actionable coaching, pragmatic HR solutions, and professional mentorship rooted from over two decades of real-world expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
