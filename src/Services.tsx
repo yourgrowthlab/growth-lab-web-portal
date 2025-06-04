@@ -62,7 +62,7 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-growthlab-teal to-growthlab-light mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Comprehensive HR solutions designed to transform your organization's human capital strategy and drive sustainable growth.
+            Comprehensive HR programs designed to enhance talent, strengthen leadership, and build people strategies that drive sustainable growth.
           </p>
         </div>
 
