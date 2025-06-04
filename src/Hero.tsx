@@ -11,10 +11,10 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center py-12 md:py-20">
           <div className="lg:w-1/2 mb-10 lg:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Unlock Your <span className="text-growthlab-teal bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light bg-clip-text">HR Potential</span> with Expert Guidance
+              <span className="text-growthlab-teal bg-gradient-to-r from-growthlab-teal to-growthlab-teal-light bg-clip-text">Igniting Growth, Meaningful Impact</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
-              Your Growth Lab delivers cutting-edge HR consulting, professional coaching, and mentorship to elevate your organization's human capital strategy.
+              Empowering growth in people and organizations through actionable coaching, pragmatic HR solutions, and over two decades of real-world expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
