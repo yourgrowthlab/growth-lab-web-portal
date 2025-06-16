@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "./card";
 import { Star } from "lucide-react";
@@ -43,7 +42,7 @@ const Testimonials = () => {
     },
     {
       name: "Rinka Rima",
-      text: "I am deeply grateful for the guidance and insights I received from Mrs. Dewi during our mentoring sessions. Her thoughtful questions, encouragement, and constructive feedback helped me see my own strengths more clearly—something I often overlooked. Through her support, I gained a renewed sense of confidence and clarity, especially as I prepared for the highly competitive Chevening Scholarship selection process. What I appreciated most was how Mrs. Dewi didn't just provide technical advice, but also nurtured my mindset and self-belief. She reminded me that every achievement begins with a willingness to try and that growth happens when we step into uncertainty with purpose. Her approach is both grounded and uplifting—rooted in experience, yet always forward-looking. Thanks to her mentorship, I now approach this opportunity with greater conviction and optimism. I feel empowered to represent not only my own story but also the values she helped me strengthen: integrity, resilience, and self-awareness. May Mrs. Dewi and her family continue to be blessed, and may her wisdom keep inspiring many more aspiring professionals like me. With heartfelt gratitude, Rinka Rima",
+      text: "Mrs. Dewi's coaching was a turning point in my Chevening Scholarship journey. Her insights were practical, thoughtful, and deeply encouraging. She helped me recognize my strengths, refine my narrative, and approach each step with confidence and clarity. What stood out was her genuine belief in my potential, which inspired me to aim higher and stay grounded. Her support went beyond technical guidance—it was both empowering and uplifting. I'm truly grateful for the opportunity to learn from her, and I carry her wisdom with me as I continue pursuing my goals.",
       initials: "RR"
     }
   ];
