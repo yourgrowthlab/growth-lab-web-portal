@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import { AspectRatio } from "./aspect-ratio";
@@ -18,7 +17,7 @@ const CaseStudies = () => {
       description: "A recent graduate with one year of internship experience engaged us for career coaching to secure her first full-time role. We began by refining her CV to emphasize transferable skills and relevant achievements, positioning her as a strong early-career candidate. Once shortlisted, we provided structured interview coaching—first to prepare for an HR interview, then for a second-round discussion with the company owner. Our sessions focused on building confidence, highlighting potential, and aligning her responses with the company's values. Following a successful interview process, we guided her through salary negotiation, helping her communicate her expectations professionally.",
       outcome: "She ultimately received and accepted a full-time offer. This case reflects how focused, end-to-end coaching can empower early-career professionals to present their best selves and transition confidently into the workforce.",
       icon: <Target className="h-12 w-12 text-growthlab-teal" />,
-      image: "https://img.freepik.com/free-photo/two-businesswomen-having-meeting-office_23-2149190076.jpg",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=7952&q=80",
     },
     {
       title: "Mentoring an HRGA Supervisor to Build an HR Framework",
@@ -32,7 +31,7 @@ const CaseStudies = () => {
       description: "A mentee approached us for guidance in designing a personalized career plan that aligned with their aspirations and strengths. Through a combination of self-assessment tools, reflective exercises, and one-on-one coaching, we helped the mentee clarify their career goals and identify key development areas.",
       outcome: "The result was a clear, motivating career roadmap that empowered the mentee to take charge of their professional journey with confidence and purpose.",
       icon: <Star className="h-12 w-12 text-growthlab-teal" />,
-      image: "https://img.freepik.com/free-photo/two-businesswomen-having-meeting-office_23-2149190076.jpg",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4076&q=80",
     },
     {
       title: "Coaching a Client to Strengthen Leadership and Resource Discipline",
