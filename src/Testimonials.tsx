@@ -37,7 +37,7 @@ const Testimonials = () => {
     },
     {
       name: "Zara",
-      text: "I truly enjoyed my mentoring experience with Mrs. Dewi. With over 20 years of experience in the HR field, she possesses a deep understanding of how HR practices have evolved over time. Her delivery is clear and direct, always focused on answering the core of my questions. Mrs. Dewi is warm and approachable. She shares insights grounded in real experience—never exaggerated—and consistently acknowledges and appreciates even the smallest things I share, whether expressed verbally or through actions. Her sincere appreciation made me feel seen and valued, which motivated me to keep learning and continue my mentoring journey with her. She also emphasizes the importance of integrity in the profession, always sharing her experiences in a way that respects the confidentiality and reputation of the organizations she has worked with. I feel very grateful and honored to be one of her mentees. Thank you so much, Mrs. Dewi.",
+      text: "I truly enjoyed my mentoring experience with Mrs. Dewi. With over 20 years of experience in the HR field, she possesses a deep understanding of how HR practices have evolved over time. Her delivery is clear and direct, always focused on answering the core of my questions. Mrs. Dewi is warm and approachable. She shares insights grounded in real experience—never exaggerated—and consistently acknowledges and appreciates even the smallest things I share, whether expressed verbally or through actions. Her sincere appreciation made me feel seen and valued, which motivated me to keep learning and continue my mentoring journey with her. I feel very grateful and honored to be one of her mentees. Thank you so much",
       initials: "Z"
     },
     {
