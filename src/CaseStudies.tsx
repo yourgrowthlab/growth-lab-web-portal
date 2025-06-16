@@ -1,16 +1,24 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import { AspectRatio } from "./aspect-ratio";
-import { CheckCircle, Users, FileText, Award, Star } from "lucide-react";
+import { CheckCircle, Users, FileText, Award, Star, Target } from "lucide-react";
 
 const CaseStudies = () => {
   const caseStudies = [
     {
       title: "Developing HR Policies and SOPs for a Construction Company",
-      description: "A client from the construction sector approached us to strengthen their HR governance by developing two key HR policies and standard operating procedures (SOPs). The first covered Resignation, Selection & Onboarding, ensuring a seamless employee lifecycle from recruitment to exit, and minimizing operational disruptions.",
-      outcome: "The outcome was a set of formal, pragmatic policies that enhanced compliance, safeguarded employee relations, and supported operational continuity.",
+      description: "A client from the construction sector engaged us to enhance their HR governance by developing two key HR policies and standard operating procedures (SOPs). The first focused on Recruitment, Selection, and Onboarding, aimed at ensuring a structured and consistent approach to attracting, assessing, and integrating new hires. This SOP was designed to improve hiring quality, accelerate new employee adjustment, and minimize early attrition. The second SOP addressed the Termination of Employment, with a focus on legal compliance, fairness, and procedural clarity during the offboarding process. Our approach involved in-depth consultations with the company's leadership and HR team to understand internal practices, organizational culture, and industry-specific challenges.",
+      outcome: "The resulting SOPs were pragmatic, context-sensitive, and legally sound. They not only supported smoother operational processes but also reinforced compliance, improved the employee experience across the employment lifecycle, and helped foster trust and transparency within the organization.",
       icon: <FileText className="h-12 w-12 text-growthlab-teal" />,
       image: "https://img.freepik.com/free-photo/construction-team-discussing-building-project-site-with-blueprint_23-2149089455.jpg",
+    },
+    {
+      title: "From Internship to Employment – Coaching an Early-Career Professional",
+      description: "A recent graduate with one year of internship experience engaged us for career coaching to secure her first full-time role. We began by refining her CV to emphasize transferable skills and relevant achievements, positioning her as a strong early-career candidate. Once shortlisted, we provided structured interview coaching—first to prepare for an HR interview, then for a second-round discussion with the company owner. Our sessions focused on building confidence, highlighting potential, and aligning her responses with the company's values. Following a successful interview process, we guided her through salary negotiation, helping her communicate her expectations professionally.",
+      outcome: "She ultimately received and accepted a full-time offer. This case reflects how focused, end-to-end coaching can empower early-career professionals to present their best selves and transition confidently into the workforce.",
+      icon: <Target className="h-12 w-12 text-growthlab-teal" />,
+      image: "https://img.freepik.com/free-photo/two-businesswomen-having-meeting-office_23-2149190076.jpg",
     },
     {
       title: "Mentoring an HRGA Supervisor to Build an HR Framework",

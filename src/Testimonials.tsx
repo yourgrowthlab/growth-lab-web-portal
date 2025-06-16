@@ -35,6 +35,16 @@ const Testimonials = () => {
       name: "Ilham F. Apriansyah",
       text: "Thank you so much for the mentoring session, Bu. Previously, I thought being a good HR professional meant providing the ideal service to the company. But after our conversation, I realized that what's more important is offering relevant, realistic solutions suited to the company's condition.",
       initials: "IF"
+    },
+    {
+      name: "Zara",
+      text: "I truly enjoyed my mentoring experience with Mrs. Dewi. With over 20 years of experience in the HR field, she possesses a deep understanding of how HR practices have evolved over time. Her delivery is clear and direct, always focused on answering the core of my questions. Mrs. Dewi is warm and approachable. She shares insights grounded in real experience—never exaggerated—and consistently acknowledges and appreciates even the smallest things I share, whether expressed verbally or through actions. Her sincere appreciation made me feel seen and valued, which motivated me to keep learning and continue my mentoring journey with her. She also emphasizes the importance of integrity in the profession, always sharing her experiences in a way that respects the confidentiality and reputation of the organizations she has worked with. I feel very grateful and honored to be one of her mentees. Thank you so much, Mrs. Dewi.",
+      initials: "Z"
+    },
+    {
+      name: "Rinka Rima",
+      text: "I am deeply grateful for the guidance and insights I received from Mrs. Dewi during our mentoring sessions. Her thoughtful questions, encouragement, and constructive feedback helped me see my own strengths more clearly—something I often overlooked. Through her support, I gained a renewed sense of confidence and clarity, especially as I prepared for the highly competitive Chevening Scholarship selection process. What I appreciated most was how Mrs. Dewi didn't just provide technical advice, but also nurtured my mindset and self-belief. She reminded me that every achievement begins with a willingness to try and that growth happens when we step into uncertainty with purpose. Her approach is both grounded and uplifting—rooted in experience, yet always forward-looking. Thanks to her mentorship, I now approach this opportunity with greater conviction and optimism. I feel empowered to represent not only my own story but also the values she helped me strengthen: integrity, resilience, and self-awareness. May Mrs. Dewi and her family continue to be blessed, and may her wisdom keep inspiring many more aspiring professionals like me. With heartfelt gratitude, Rinka Rima",
+      initials: "RR"
     }
   ];
 
